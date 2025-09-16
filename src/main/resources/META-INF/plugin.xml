@@ -1,0 +1,13 @@
+<idea-plugin>
+    <id>com.eligibbs.ive</id>
+    <name>Image Viewer Enhancements</name>
+    <vendor email="eligibbs@outlook.com">Eli GIbbs</vendor>
+    <version>0.1.1</version>
+    <idea-version since-build="252.0" until-build="252.*"/>
+
+    <depends>com.intellij.platform.images</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory id="ive-widget" implementation="com.eligibbs.ive.IVEWidgetFactory"/>
+    </extensions>
+</idea-plugin>
