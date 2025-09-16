@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "eligibbs.ive"
-version = "0.1.1"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -21,7 +21,7 @@ dependencies {
 
 tasks {
     patchPluginXml {
-        sinceBuild.set("252.0")
+        sinceBuild.set("242.0")
         untilBuild.set("252.*")
     }
 
