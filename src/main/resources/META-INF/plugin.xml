@@ -2,14 +2,13 @@
     <id>com.eligibbs.ive</id>
     <name>Image Viewer Enhancements</name>
     <vendor email="eligibbs@outlook.com">Eli Gibbs</vendor>
-    <version>1.0.2</version>
-    <description>An IntelliJ plugin (developed against IntelliJ IDEA 2025.2.1) that adds functionality to the image viewer (color, image coordinates, lockable). Use CTRL+L (Also configurable) to lock unlock, and see the status bar (at the bottom) for the results.</description>
-    <!-- <idea-version .../> is intentionally omitted; set via Gradle patchPluginXml -->
+    <version>1.0.3</version>
+    <description>An IntelliJ plugin (developed against IntelliJ IDEA 2026.1) that adds functionality to the image viewer (color, image coordinates, lockable). Use CTRL+L (Also configurable) to lock unlock, and see the overlay in image viewer for the results.</description>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.platform.images</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <statusBarWidgetFactory id="ive-widget" implementation="com.eligibbs.ive.IVEWidgetFactory"/>
+        <postStartupActivity implementation="com.eligibbs.ive.IVEStartupActivity"/>
     </extensions>
 </idea-plugin>

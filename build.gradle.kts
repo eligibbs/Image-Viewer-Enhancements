@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "eligibbs.ive"
-version = "1.0.2"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
@@ -13,16 +13,14 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        intellijIdea("2025.3")
-
-        instrumentationTools()
+        intellijIdea("2026.1")
     }
 }
 
 tasks {
     patchPluginXml {
         sinceBuild.set("242.0")
-        untilBuild.set("253.*")
+        untilBuild.set("261.*")
     }
 
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
