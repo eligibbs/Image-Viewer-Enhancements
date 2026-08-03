@@ -20,7 +20,7 @@ dependencies {
 tasks {
     patchPluginXml {
         sinceBuild.set("242.0")
-        untilBuild.set("261.*")
+        untilBuild.set("262.*")
     }
 
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
