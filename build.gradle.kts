@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "eligibbs.ive"
-version = "1.0.3"
+version = "1.0.4"
 
 repositories {
     mavenCentral()
@@ -21,6 +21,10 @@ tasks {
     patchPluginXml {
         sinceBuild.set("242.0")
         untilBuild.set("262.*")
+    }
+
+    named("buildSearchableOptions") {
+        enabled = false
     }
 
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
